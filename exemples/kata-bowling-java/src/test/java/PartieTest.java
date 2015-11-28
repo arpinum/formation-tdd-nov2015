@@ -11,14 +11,14 @@ public class PartieTest {
     }
 
     @Test
-    public void leScoreDUnePartieGoutiereEstZéro() {
+    public void le_score_d_une_partie_goutiere_est_zéro() {
         nouveauxLancers(20, 0);
 
         assertThat(partie.score()).isEqualTo(0);
     }
 
     @Test
-    public void leScoreDUnePartieModesteEstAussiModeste() {
+    public void le_score_d_une_partie_modeste_est_aussi_modeste() {
         partie.nouveauLancer(1);
         nouveauxLancers(19, 0);
 
@@ -26,7 +26,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leScorePrendEnCompteUnSpare() {
+    public void le_score_prend_en_compte_un_spare() {
         nouveauSpare();
         partie.nouveauLancer(1);
         nouveauxLancers(17, 0);
@@ -35,7 +35,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leScorePrendEnCompteUnStrike() {
+    public void le_score_prend_en_compte_un_strike() {
         partie.nouveauLancer(10);
         partie.nouveauLancer(1);
         partie.nouveauLancer(2);
@@ -45,7 +45,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leScoreMaximalEst300() {
+    public void le_score_maximal_est_300() {
         nouveauxLancers(12, 10);
 
         assertThat(partie.score()).isEqualTo(300);

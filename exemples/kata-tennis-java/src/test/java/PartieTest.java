@@ -11,14 +11,14 @@ public class PartieTest {
     }
 
     @Test
-    public void laPartieCommenceAZéroZéro() {
+    public void la_partie_commence_a_0_0() {
         String score = partie.score();
 
         assertThat(score).isEqualTo("0 - 0");
     }
 
     @Test
-    public void leJoueur1PeutMarquerUnPoint() {
+    public void le_joueur_1_peut_marquer_un_point() {
         leJoueur1Marque(1);
 
         String score = partie.score();
@@ -27,7 +27,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur1PeutMarquerDeuxPoints() {
+    public void le_joueur_1_peut_marquer_deux_points() {
         leJoueur1Marque(2);
 
         String score = partie.score();
@@ -36,7 +36,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur1PeutMarquer3Points() {
+    public void le_joueur_1_peut_marquer_3_points() {
         leJoueur1Marque(3);
 
         String score = partie.score();
@@ -45,7 +45,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur1PeutGagnerLaPartie() {
+    public void le_joueur_1_peut_gagner_la_partie() {
         leJoueur1Marque(4);
 
         String score = partie.score();
@@ -54,7 +54,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur2PeutMarquerUnPoint() {
+    public void le_joueur_2_peut_marquer_un_point() {
         leJoueur2Marque(1);
 
         String score = partie.score();
@@ -63,7 +63,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur2PeutGagnerLaPartie() {
+    public void le_joueur_2_peut_gagner_la_partie() {
         leJoueur2Marque(4);
 
         String score = partie.score();
@@ -72,7 +72,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur1PeutAvoirLAvantage() {
+    public void le_joueur_1_peut_avoir_l_avantage() {
         leJoueur2Marque(3);
         leJoueur1Marque(4);
 
@@ -82,7 +82,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur1PeutGagnerAprèsAvoirEuLAvantage() {
+    public void le_joueur_1_peut_gagner_après_avoir_eu_l_avantage() {
         leJoueur2Marque(3);
         leJoueur1Marque(5);
 
@@ -92,7 +92,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur2PeutAvoirLAvantage() {
+    public void le_joueur_2_peut_avoir_l_avantage() {
         leJoueur1Marque(3);
         leJoueur2Marque(4);
 
@@ -102,7 +102,7 @@ public class PartieTest {
     }
 
     @Test
-    public void leJoueur2PeutGagnerAprèsAvoirEuLAvantage() {
+    public void le_joueur_2_peut_gagner_après_avoir_eu_l_avantage() {
         leJoueur1Marque(3);
         leJoueur2Marque(5);
 
@@ -112,7 +112,7 @@ public class PartieTest {
     }
 
     @Test
-    public void ilPeutYAvoirUneEgalité() {
+    public void il_peut_y_avoir_une_égalité() {
         leJoueur1Marque(3);
         leJoueur2Marque(3);
 
@@ -122,7 +122,7 @@ public class PartieTest {
     }
 
     @Test
-    public void siLesJoueursSontA30PartoutLeScoreNEstPasEgalité() {
+    public void si_les_joueurs_sont_a_30_partout_le_score_n_est_pas_egalité() {
         leJoueur1Marque(2);
         leJoueur2Marque(2);
 

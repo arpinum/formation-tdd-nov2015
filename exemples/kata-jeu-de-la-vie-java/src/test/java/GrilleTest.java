@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GrilleTest {
 
     @Test
-    public void uneGrilleVideNeContientQueDesCellulesMortes() {
+    public void une_grille_vide_ne_contient_que_des_cellules_mortes() {
         CellulesVivantes cellules = new CellulesVivantes();
         Grille grille = new Grille(cellules);
 
@@ -17,7 +17,7 @@ public class GrilleTest {
     }
 
     @Test
-    public void uneGrillePeutResterEnVie() {
+    public void une_grille_peut_rester_en_vie() {
         CellulesVivantes cellules = new CellulesVivantes();
         cellules.ajoute(new Position(0, 0));
         cellules.ajoute(new Position(0, 1));
@@ -35,7 +35,7 @@ public class GrilleTest {
     }
 
     @Test
-    public void uneGrillePeutMourir() {
+    public void une_grille_peut_mourir() {
         CellulesVivantes cellules = new CellulesVivantes();
         cellules.ajoute(new Position(0, 0));
         Grille grille = new Grille(cellules);
@@ -47,7 +47,7 @@ public class GrilleTest {
     }
 
     @Test
-    public void uneGrillePeutEvoluer() {
+    public void une_grille_peut_evoluer() {
         CellulesVivantes cellules = new CellulesVivantes();
         cellules.ajoute(new Position(0, 0));
         cellules.ajoute(new Position(1, 0));

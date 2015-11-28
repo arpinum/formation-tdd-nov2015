@@ -13,7 +13,7 @@ public class CellulesVivantesTest {
     }
 
     @Test
-    public void lesVoisinesThéoriquesSontSituéesAuxPositionsAutourDeLaCelluleDeRéférence() {
+    public void les_voisines_théoriques_sont_autour_de_la_cellule_de_référence() {
         Set<Position> positions = vivantes.positionsVoisinesThéoriques(new Position(5, 5));
 
         assertThat(positions).hasSize(8);
@@ -28,7 +28,7 @@ public class CellulesVivantesTest {
     }
 
     @Test
-    public void peutFournirLeNombreDeVoisinesVivantes() {
+    public void peut_fournir_le_nombre_de_voisines_vivantes() {
         vivantes.ajoute(new Position(-1, 0));
         vivantes.ajoute(new Position(0, 0));
         vivantes.ajoute(new Position(1, 0));

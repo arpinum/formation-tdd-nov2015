@@ -7,20 +7,20 @@ import org.junit.Test;
 public class FacteursPremiersTest {
 
     @Test
-    public void pasDeFacteurPremierPour1() {
+    public void pas_de_facteur_premier_pour_1() {
         List<Integer> facteurs = new FacteursPremiers().pour(1);
 
         assertThat(facteurs).isEmpty();
     }
 
     @Test
-    public void unNombrePremierEstSonSeulFacteurPremier() {
+    public void un_nombre_premier_est_son_seul_facteur_premier() {
         assertThat(new FacteursPremiers().pour(2)).containsOnly(2);
         assertThat(new FacteursPremiers().pour(3)).containsOnly(3);
     }
 
     @Test
-    public void ilEstPossibleDObtenirLesFacteursPremiersDUnNombreNonPremier() {
+    public void il_est_possible_d_obtenir_les_facteurs_premiers_d_un_nombre_non_premier() {
         assertThat(new FacteursPremiers().pour(4)).containsOnly(2, 2);
         assertThat(new FacteursPremiers().pour(9)).containsOnly(3, 3);
         assertThat(new FacteursPremiers().pour(100)).containsOnly(2, 2, 5, 5);
