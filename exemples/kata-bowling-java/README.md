@@ -2,11 +2,15 @@
 
 ## Run unit tests
 
-    gradle test
-    
+    ./gradlew test
+
+(use .bat on windows)
+
 ## Run lint, unit tests and coverage
 
-    gradle    
+    ./gradlew
+
+(use .bat on windows)
 
 ## Libraries documentation
 

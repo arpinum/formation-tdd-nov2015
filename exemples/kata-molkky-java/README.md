@@ -4,13 +4,17 @@ Implémentation du calcul du score au Mölkky.
 
 Les règles sont disponibles sur [wikipedia].
 
-## Lancer les tests
+## Run unit tests
 
-    gradle test
-    
-## Lancer la qualimétrie et les tests
+    ./gradlew test
 
-    gradle
+(use .bat on windows)
+
+## Run lint, unit tests and coverage
+
+    ./gradlew
+
+(use .bat on windows)
 
 ## Bibliothèques utilisées
 

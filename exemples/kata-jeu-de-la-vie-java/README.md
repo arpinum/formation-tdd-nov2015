@@ -4,13 +4,17 @@ Implémentation du Jeu de la vie.
 
 Les règles sont disponibles sur [wikipedia].
 
-## Lancer les tests
+## Run unit tests
 
-    gradle test
+    ./gradlew test
 
-## Lancer la qualimétrie et les tests
+(use .bat on windows)
 
-    gradle
+## Run lint, unit tests and coverage
+
+    ./gradlew
+
+(use .bat on windows)
 
 ## Bibliothèques utilisées
 
