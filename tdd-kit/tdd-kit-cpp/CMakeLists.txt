@@ -1,17 +1,20 @@
-PROJECT(tdd-kit-cpp)
+project(tdd-kit-cpp)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+cmake_minimum_required(VERSION 2.6)
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
- 
-FIND_PACKAGE(GTest REQUIRED)
-INCLUDE_DIRECTORIES(${GTEST_INCLUDE_DIRS})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-ADD_EXECUTABLE(
-  runtests
-  sources/suite.cpp
-  sources/fizzbuzz.cpp
-  sources/fizzbuzztests.cpp
-)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
-TARGET_LINK_LIBRARIES(runtests ${GTEST_LIBRARIES} pthread)
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+find_package(GMock REQUIRED)
+include_directories(${GMOCK_INCLUDE_DIRS})
+
+file(GLOB SOURCES sources/**/*.cpp)
+file(GLOB HEADERS sources/**/*.h)
+
+add_executable(runtests ${SOURCES} ${HEADERS})
+
+target_link_libraries(runtests ${GTEST_LIBRARIES} ${GMOCK_BOTH_LIBRARIES} pthread)

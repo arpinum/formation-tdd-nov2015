@@ -1,5 +1,4 @@
-#include <gtest/gtest.h>
-#include <string.h>
+#include "gtest/gtest.h"
 
 #include "fizzbuzz.h"
 
