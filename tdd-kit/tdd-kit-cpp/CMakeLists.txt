@@ -1,4 +1,8 @@
+PROJECT(tdd-kit-cpp)
+
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
  
 FIND_PACKAGE(GTest REQUIRED)
 INCLUDE_DIRECTORIES(${GTEST_INCLUDE_DIRS})
@@ -9,4 +13,5 @@ ADD_EXECUTABLE(
   sources/fizzbuzz.cpp
   sources/fizzbuzztests.cpp
 )
+
 TARGET_LINK_LIBRARIES(runtests ${GTEST_LIBRARIES} pthread)

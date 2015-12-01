@@ -17,9 +17,14 @@
 
     ./runtests
 
+## Documentation
+
+* [Google Test Primer]
+
 ## License
 
 [MIT](LICENSE)
 
 [CMake]: https://cmake.org
 [Google Test]: https://github.com/google/googletest
+[Google Test Primer]: https://github.com/google/googletest/blob/master/googletest/docs/Primer.md
