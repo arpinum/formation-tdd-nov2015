@@ -1,8 +1,9 @@
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import java.util.List;
 
-import org.junit.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class FacteursPremiersTest {
 
@@ -25,5 +26,11 @@ public class FacteursPremiersTest {
         assertThat(new FacteursPremiers().pour(9)).containsOnly(3, 3);
         assertThat(new FacteursPremiers().pour(100)).containsOnly(2, 2, 5, 5);
         assertThat(new FacteursPremiers().pour(1010021)).containsOnly(17, 19, 53, 59);
+    }
+
+    @Test
+    @Ignore
+    public void gère_un_nombre_très_grand() {
+        assertThat(new FacteursPremiers().pour(Integer.MAX_VALUE)).isNotEmpty();
     }
 }
