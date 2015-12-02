@@ -35,6 +35,7 @@ La présentation de l'exercice du jeu de la vie est disponible dans le répertoi
 * [Refactoring]
 * [cyber-dojo]
 * [Mocks Aren't Stubs]
+* [Pour en finir avec les Stubs et les Mocks]
 * [Inversion of Control Containers and the Dependency Injection pattern]
 * [Test pyramid]
 
@@ -47,5 +48,6 @@ La présentation de l'exercice du jeu de la vie est disponible dans le répertoi
 [Working Effectively With Legacy Code]: http://c2.com/cgi/wiki?WorkingEffectivelyWithLegacyCode
 [Refactoring]: http://c2.com/cgi/wiki?RefactoringImprovingTheDesignOfExistingCode
 [Mocks Aren't Stubs]: http://martinfowler.com/articles/mocksArentStubs.html
+[Pour en finir avec les Stubs et les Mocks]: http://agilitateur.azeau.com/post/2011/04/12/Pour-en-finir-avec-les-Stubs-et-les-Mocks
 [Inversion of Control Containers and the Dependency Injection pattern]: http://martinfowler.com/articles/injection.html
 [Test pyramid]: http://martinfowler.com/bliki/TestPyramid.html
