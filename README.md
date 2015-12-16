@@ -6,7 +6,7 @@ La présentation théorique de TDD est disponible dans `presentation/tdd-en-5-mi
 
 Il suffit d'ouvrir le fichier `index.html` dans son navigateur pour la consulter.
 
-La présentation se poursuit avec une démonstration autour de l'exercice du Mölkky. L'implémentation est disponible dans le répertoire `exemples/kata-molkky-java`.
+La présentation se poursuit avec une démonstration autour de l'exercice du bowling. L'implémentation est disponible dans le répertoire `exemples/kata-bowling-java`.
 
 ## Kits de démarrage
 
