@@ -20,6 +20,7 @@ Ils concernent les technologies suivantes :
 * JavaScript avec Mocha et Chai
 * Ruby avec Minitest
 * Bash avec shebang-unit
+* C++ avec Google Test et Google Mock
 
 ## Exercices
 
